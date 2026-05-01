@@ -1,150 +1,206 @@
 /*------------CABECERA--------------*/
 
-
-header{
-  
-  background-color: rgba(56, 87, 224, 0.39);
+* {
+  margin: 0px;
+  padding: 0.5px;
+  box-sizing: border-box 3px;
 }
 
+header {
+  background-color: rgba(56, 87, 224, 0.39);
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding-top: 20px;
+}
 
-nav a{
+nav a {
   list-style: none;
   text-decoration: none;
   background-color: black;
-  color:rgb(252, 251, 251)
+  color: rgb(252, 251, 251)
 }
 
 
-.navbar-brand img{
-height: 100px;
+.navbar-brand img {
+  height: 100px;
+  border-radius: 6px;
 }
 
-.nav-item{
+.nav-item {
   border-radius: 0.5rem;
   padding: 0.3rem;
   margin: 0.3rem;
   box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
 }
-.nav-item:hover{
+
+.nav-item:hover {
   background-color: rgba(56, 87, 224, 0.39);
   color: white;
   border: 0.5px solid black;
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
 }
-.nav-item:active{
-  background-color: #280231a1; 
+
+.nav-item:active {
+  background-color: #280231a1;
 }
 
-.nav-item dropdown{
+.nav-item dropdown {
   border-radius: 0.5rem;
   padding: 0.3rem;
   margin: 0.3rem;
 }
-.nav-item dropdown:hover{
+
+.nav-item dropdown:hover {
   background-color: rgba(56, 87, 224, 0.39);
   color: white;
   border: 0.5px solid black;
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
 }
-.nav-item dropdown:active{
-  background-color: #280231a1; 
+
+.nav-item dropdown:active {
+  background-color: #280231a1;
 }
 
-.nav-item contact{
+.nav-item contact {
   border-radius: 0.5rem;
   padding: 0.3rem;
   margin: 0.3rem;
 }
-.nav-item contact:hover{
+
+.nav-item contact:hover {
   background-color: rgba(56, 87, 224, 0.39);
   color: white;
   border: 0.5px solid black;
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
 }
-.nav-item contact:active{
-  background-color: #280231a1; 
+
+.nav-item contact:active {
+  background-color: #280231a1;
 }
 
-h1{
-  color: rgb(253, 253, 253);
-  font-size: 2rem;
+body h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
   font-weight: 600;
+  text-align: center;
 }
+
+body h2 {
+  color: rgba(5, 5, 5, 0.699);
+  font-size: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+}
+
 
 /*------------MAIN--------------*/
 
-h2{
-  color: rgb(124, 124, 124);
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration:underline;
-}
 
-p{
-  position:relative;
-  font-size: 1rem;
+.introduccion {
+  border: 0.5px solid black;
+  border-radius: 5px;
+  box-shadow: 1 1 1 2px rgba(120, 121, 122, 0.4);
+  box-sizing: border-box 2px;
   font-weight: 100;
-  text-decoration:dashed; 
-}
-@import url(Index.htmlhttps://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&family=Playwrite+IE:wght@100..400&display=swap);
-body {font-family:Arial, Helvetica, sans-serif;}
-
-*{
-margin: 0px;
-padding:5px;
+  padding: 10px;
+  margin: 50px;
 }
 
-body{
-background-image: url(img/WhatsApp\ Image\ 2026-03-30\ at\ 3.19.08\ PM.jpeg);
-background-size: 200px;
-background-repeat: no-repeat;
-background-position:bottom;
-}
-
-
-.box1, .box2, .box3, .box4{
-background-color: rgba(56, 87, 224, 0.39);
-color: aliceblue;
-}
-
-
-.caja-flex{
-height: 60vh;
-width: 60vh;
-margin-bottom: 10rem;
-padding: 1rem;
-box-sizing: 20rem;
+main h3{
 display: flex;
-flex-direction: row;
-flex-wrap:initial;
-justify-content: space-around;
-align-content: flex-start;
-gap: 1rem;
+justify-content: center;
+font-weight: 100;
 }
 
-input, textarea {
-  border: 1px solid #D1D5DB; 
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/WhatsApp\ Image\ 2026-03-30\ at\ 3.19.08\ PM.jpeg);
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  align-items: normal;
+}
+
+
+.carousel-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding-bottom: 50px 0;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: rgba(56, 87, 224, 0.39);
+  color: aliceblue;
+}
+
+
+.caja-flex {
+  min-height: 60vh;
+  width: 70vh;
+  margin: 5rem;
+  padding: 1rem;
+  box-sizing: 20rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: initial;
+  justify-content: space-around;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  border: 1px solid #D1D5DB;
   padding: 8px;
   border-radius: 4px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-input:hover, textarea:hover {
-  border-color: #2563EB; 
+
+input:hover,
+textarea:hover {
+  border-color: #2563EB;
 }
+
 input:invalid {
-  border-color: #DC2626; 
+  border-color: #DC2626;
 }
-button, input, textarea {
+
+button,
+input,
+textarea {
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*------------FOOTER--------------*/
 
-footer{
-  color:rgb(116, 115, 115);
+footer {
+  color: rgb(116, 115, 115);
   font-size: 15px;
 }
-
