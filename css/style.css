@@ -1,101 +1,196 @@
-selector
+/*------------CABECERA--------------*/
 
-h1{ 
-    color:red;
-}
-
-p{
-    color:brown
+* {
+  margin: 0px;
+  padding: 0.5px;
+  box-sizing: border-box 3px;
 }
 
-.text-verde{
-  color:darkgreen
+header {
+  background-color: #aec3b0;
+  border-radius: 5px;
+  border: 2px solid #01161e;
+  padding-top: 20px;
 }
 
-.content-box{
-    color: red;
-    background-color: orange;
-    text-align: center;
-    /* ALTOS Y ANCHOS */
-
-    width: 100px; /* ancho de una caja */
-    /* BORDES */
-    border: 4px inset rgb(131, 40, 40);
-    /* PADDING  ESPACIO INTERNO */
-    padding: 50px;
-    /* MARGIN  ESPACIO EXTERNO */
-    margin: 30px;
+nav a {
+  list-style: none;
+  text-decoration: none;
+  background-color: black;
+  color: rgb(252, 251, 251)
 }
 
-<!-----------------EMMET----------------->
-<div class="container">
-    <div class="box" id="box1">
-        <p>CAJA 1</p>
-    </div>
-    <div class="box" id="box2">
-        <p>CAJA 2</p>
-    </div>
-    <div class="box" id="box3">
-        <p>CAJA 3</p>
-    </div>
-    <div class="box" id="box4">
-        <p>CAJA 4</p>
-    </div>
-    <div class="box" id="box5">
-        <p>CAJA 5</p>
-    </div>
-    <div class="box" id="box6">
-        <p>CAJA 6</p>
-    </div>
-</div>
 
-<!-----------------POSITIONS----------------->
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navbar-brand img {
+  height: 110px;
+  border-radius: 5px;
 }
 
-.box{
-    background-color: red;
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-/* POSITIONS */
-#box1{
-    background-color: green;
-    position: absolute;
-    right: 40px;
-}
-#box2{
-    background-color: rgb(232, 186, 186);
-    position: relative;
-}
-#box2 h4{
-    color: rgb(254, 254, 255);
-    background-color: red;
-    position: absolute;
-    right: 0px;
-    padding: 4px;
+.nav-item {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  box-shadow: 0 0 0 1.5px rgba(52, 53, 53, 0.4);
 }
 
-#box3{
-    background-color: rgb(21, 223, 65);
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+.nav-item:hover {
+  background-color: rgba(56, 87, 224, 0.39);
+  color: rgb(63, 63, 63);
 }
-#box4{
-    background-color: blueviolet;
-    position: sticky;
-    top: 0px;
-    height: 40px;
-    width: 100vw;
-    margin: 0px;
-    text-align: center;
+
+.nav-item:active {
+  background-color: #280231a1;
+}
+
+.nav-item dropdown:hover {
+  background-color: rgba(56, 87, 224, 0.39);
+  color: rgb(63, 63, 63);
+  border: 0.5px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
+}
+
+.nav-item dropdown:active {
+  background-color: #280231a1;
+}
+
+.nav-item contact:hover {
+  background-color: rgba(56, 87, 224, 0.39);
+  color: rgb(63, 63, 63);
+  border: 0.5px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
+}
+
+.nav-item contact:active {
+  background-color: #280231a1;
+}
+
+body h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body h2 {
+  color: rgba(5, 5, 5, 0.699);
+  font-size: 1.8rem;
+  text-align: center;
+  font-style: italic;
+  padding: 8px;
+}
+
+
+/*------------MAIN--------------*/
+
+text-black {
+  color: black;
+}
+
+.introduccion {
+  background-color: #eff6e0;
+  border: 1px solid #01161e;
+  border-radius: 5px;
+  box-shadow: 1 1 1 2px rgba(120, 121, 122, 0.4);
+  box-sizing: border-box 2px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 50px;
+}
+
+main h3{
+display: flex;
+justify-content: center;
+font-weight: 100;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/WhatsApp\ Image\ 2026-03-30\ at\ 3.19.08\ PM.jpeg);
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  align-items: normal;
+}
+
+
+.carousel-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding-bottom: 50px 0;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: rgba(56, 87, 224, 0.39);
+  color: aliceblue;
+}
+
+
+.caja-flex {
+  min-height: 60vh;
+  width: 70vh;
+  margin: 5rem;
+  padding: 1rem;
+  box-sizing: 20rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: initial;
+  justify-content: space-around;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  border: 1px solid #D1D5DB;
+  padding: 8px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #2563EB;
+}
+
+input:invalid {
+  border-color: #DC2626;
+}
+
+button,
+input,
+textarea {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*------------FOOTER--------------*/
+
+footer {
+  color: rgb(116, 115, 115);
+  font-size: 15px;
+}
