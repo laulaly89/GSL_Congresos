@@ -76,7 +76,7 @@ body h2 {
   border-radius: 5px;
   box-shadow: 1 1 1 2px rgba(120, 121, 122, 0.4);
   box-sizing: border-box 2px;
-  font-weight: 100;
+  font-weight: 10px;
   padding: 10px;
   margin: 50px;
 }
@@ -84,9 +84,39 @@ body h2 {
 main h3 {
   display: flex;
   justify-content: center;
-  font-weight: 100;
+  font-size: x-large;
+  padding-top: 5vh;
 }
 
+main h4 {
+font-size: large;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: #124559;
+  color: aliceblue;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  align-items: center;
+}
+
+.caja-flex {
+  margin: 15px;
+  padding: 10px;
+  box-sizing: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1.5rem;
+  min-height: 300px;
+  width: 300px;
+}
 
 .carousel-parent {
   display: flex;
@@ -109,28 +139,6 @@ main h3 {
   height: 300px;
 }
 
-.box1,
-.box2,
-.box3,
-.box4 {
-  background-color: #124559;
-  color: aliceblue;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-
-.caja-flex {
-  margin: 20vh;
-  padding: 0;
-  box-sizing: 20rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  gap: 1rem;
-}
-
 
 .fieldset {
   border: 1px solid #000000;
@@ -146,6 +154,8 @@ textarea:hover {
   border-color: #28292c;
 }
 
+.mapa{
+padding: 30px;}
 
 
 /*------------FOOTER--------------*/
