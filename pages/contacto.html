@@ -53,7 +53,7 @@
                 </ul>
               </li>
 
-              <!-- Contacto es la página actual -->
+
               <li class="nav-item contact">
                 <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
               </li>
@@ -61,7 +61,7 @@
 
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-dark" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -81,25 +81,37 @@
       <form>
         <div class="fieldset">
           <fieldset>
+
             <legend>Datos personales</legend>
-            <div><label for="name">Nombre</label></div>
-            <div><input type="text" id="name" required></div>
-            <div><label for="surname">Apellido</label></div>
-            <div><input type="text" id="surname" required></div>
-            <div><label for="mail">Correo electrónico</label></div>
-            <div><input type="email" id="mail" required></div>
+            
+            <div class="mb-3">
+              <label for=mail" class="form-label">Nombre</label>
+              <input type="nombre" class="form-control" id="asunto" rows="3" required>
+            </div>
+            <div class="mb-3">
+              <label for=mail" class="form-label">Apellido</label>
+              <input type="apellido" class="form-control" id="asunto" rows="3" required>
+            </div>
+            <div class="mb-3">
+              <label for=mail" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com" required>
+            </div>
 
-            <div><label for="Asunto">Asunto:</label></div>
-            <div><input type="Asunto" id="Asunto" name="Asunto" required></div>
+            <div class="mb-3">
+              <label for=mail" class="form-label">Asunto:</label>
+              <input type="asunto" class="form-control" id="asunto" rows="3" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje:</label>
+              <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
 
-            <div><label for="mensaje">Mensaje:</label></div>
-            <div><textarea id="mensaje" name="mensaje" rows="4" required></textarea></div>
+            <div><input class="btn btn-outline-dark" type="button" value="Enviar"></div>
 
-            <div><button type="submit">Enviar</button></div>
-
+          </fieldset>
         </div>
       </form>
-      </fieldset>
+
 
     </section>
   </body>
@@ -116,18 +128,18 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9526351242243!2d-58.418442799999994!3d-34.605359199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca61cdadbb81%3A0x82b60da8ea7375d9!2sBulnes%20500%2C%20C1197%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1775002485991!5m2!1ses-419!2sar"
       width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+  <h2>Enlaces generales</h2>
+  <ul>
+    <li>Trabaja con nosotros</li>
+    <li>Facebook</li>
+    <li>Instagram</li>
+    <li>Contactanos</li>
+  </ul>
+  <p>Sitio hecho por Laura De Mársico</p>
+
 </footer>
-
-<h2>Enlaces generales</h2>
-<ul>
-  <li>Trabaja con nosotros</li>
-  <li>Facebook</li>
-  <li>Instagram</li>
-  <li>Contactanos</li>
-</ul>
-<p>Sitio hecho por Laura De Mársico</p>
-
-
 
 
 </html>
