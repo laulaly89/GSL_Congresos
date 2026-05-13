@@ -1,62 +1,21 @@
-/*------------CABECERA--------------*/
-
 * {
   margin: 0px;
   padding: 0.5px;
   box-sizing: border-box 3px;
 }
 
+/*------------CABECERA--------------*/
 header {
-  background-color: #aec3b0;
+  background-color: #598392;
   border-radius: 5px;
   border: 0.5px solid black;
   padding-top: 20px;
 }
 
-nav a {
-  list-style: none;
-  text-decoration: none;
-  background-color: black;
-  color: rgb(252, 251, 251)
-}
-
-
-.navbar-brand img {
-  height: 100px;
-  border-radius: 6px;
-}
-
-.nav-item,
-.nav-item dropdown,
-.nav-item contact {
-  border-radius: 0.5rem;
-  padding: 0.3rem;
-  margin: 0.3rem;
-  box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
-}
-
-.nav-item:hover,
-.nav-item dropdown:hover,
-.nav-item contact:hover{
-  background-color: rgba(56, 87, 224, 0.39);
-  color: white;
-  border: 0.5px solid black;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0 0.5px rgba(120, 121, 122, 0.4);
-}
-
-.nav-item:active,
-.nav-item dropdown:active,
-.nav-item contact:active {
-  background-color: #280231a1;
-}
-
-
 body h1 {
-  color: rgb(0, 0, 0);
   font-size: 2.5rem;
-  font-weight: 600;
   text-align: center;
+  color: black;
 }
 
 body h2 {
@@ -64,58 +23,85 @@ body h2 {
   font-size: 1.8rem;
   text-align: center;
   font-style: italic;
-  padding: 8px;
+  padding: 10px;
 }
 
+.navbar-brand img {
+  height: 110px;
+  border-radius: 6px;
+}
+
+.nav-item,
+.nav-item dropdown,
+.nav-item contact {
+  border: 0.5px solid black;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  box-shadow: 0 0 0 1px rgba(120, 121, 122, 0.4);
+}
+
+.nav-item:hover,
+.nav-item dropdown:hover,
+.nav-item contact:hover {
+  background-color: rgba(56, 87, 224, 0.39);
+}
+
+.nav-item:active,
+.nav-item dropdown:active,
+.nav-item contact:active {
+  background-color: #598392;
+}
 
 /*------------MAIN--------------*/
-
-
 .introduccion {
+  font-size: medium;
   border: 0.5px solid black;
   border-radius: 5px;
   box-shadow: 1 1 1 2px rgba(120, 121, 122, 0.4);
   box-sizing: border-box 2px;
-  font-weight: 10px;
-  padding: 10px;
+  padding: 15px;
   margin: 50px;
 }
 
 main h3 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: x-large;
   padding-top: 5vh;
 }
 
 main h4 {
-font-size: large;
+  font-size: large;
 }
 
 .box1,
 .box2,
 .box3,
 .box4 {
-  background-color: #124559;
-  color: aliceblue;
+  background-color: #598392;
+  color: white;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
-  align-items: center;
 }
 
 .caja-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
   margin: 15px;
   padding: 10px;
   box-sizing: 20rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
   gap: 1.5rem;
   min-height: 300px;
   width: 300px;
+}
+
+.mapa {
+  padding: 30px;
 }
 
 .carousel-parent {
@@ -139,29 +125,23 @@ font-size: large;
   height: 300px;
 }
 
-
 .fieldset {
-  border: 1px solid #000000;
+  border: 1px solid black;
   padding: 5px;
   border-radius: 3px;
   transition: 0.3s ease;
-  box-shadow: 0 0 0 1px;
+  box-shadow: 0 0 0 1px rgba(120, 121, 122, 0.4);
 }
 
 input:hover,
 textarea:hover {
   border: 2px;
-  border-color: #28292c;
+  border-color: black;
 }
 
-.mapa{
-padding: 30px;}
-
-
 /*------------FOOTER--------------*/
-
 footer {
-  color: rgb(247, 244, 244);
+  color: white;
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -173,3 +153,12 @@ footer {
   align-items: normal;
 }
 
+/*------------MEDIAQUERIES--------------*/
+@media (min-width: 500px) {
+  header {
+    grid-template-columns: 2 1;
+    padding-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

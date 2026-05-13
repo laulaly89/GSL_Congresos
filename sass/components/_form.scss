@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+.fieldset {
+    border: 1px solid $border-black;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 0 1px $color-box;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px;
+    border-color: $border-black;
+}

@@ -1,0 +1,52 @@
+@use "../utilities/variables" as *;
+
+
+/*------------CABECERA--------------*/
+
+header {
+    background-color: $bg-general;
+    border-radius: 5px;
+    border: 0.5px solid $border-black;
+    padding-top: 20px;
+}
+
+body h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $color-font;
+}
+
+body h2 {
+    color: $color-font1;
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+.navbar-brand img {
+    height: 110px;
+    border-radius: 6px;
+}
+
+.nav-item,
+.nav-item dropdown,
+.nav-item contact {
+    border: 0.5px solid $border-black;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    box-shadow: 0 0 0 1px $color-box;
+}
+
+.nav-item:hover,
+.nav-item dropdown:hover,
+.nav-item contact:hover {
+    background-color: $bg-nav;
+}
+
+.nav-item:active,
+.nav-item dropdown:active,
+.nav-item contact:active {
+    background-color: $bg-general;
+}

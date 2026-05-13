@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+
+
+/*------------FOOTER--------------*/
+
+footer {
+    color: $color-font2;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    padding: 10px;
+    background-color: $bg-general;
+    background-position: bottom;
+    align-items: normal;
+}

@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+/*------------MAIN--------------*/
+
+
+.introduccion {
+    font-size: medium;
+    border: 0.5px solid $border-black;
+    border-radius: 5px;
+    box-shadow: 1 1 1 2px $color-box;
+    box-sizing: border-box 2px;
+    padding: 15px;
+    margin: 50px;
+}
+
+main h3 {
+    @include flex-base;
+    font-size: x-large;
+    padding-top: 5vh;
+}
+
+main h4 {
+    font-size: large;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-color: $bg-general;
+    color: $color-font2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.caja-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 15px;
+    padding: 10px;
+    box-sizing: 20rem;
+    gap: 1.5rem;
+    min-height: 300px;
+    width: 300px;
+}
+
+.mapa {
+    padding: 30px;
+}
