@@ -40,21 +40,30 @@ body h2 {
   margin: 0.3rem;
   box-shadow: 0 0 0 1px rgba(120, 121, 122, 0.4);
 }
-
-.nav-item:hover,
-.nav-item dropdown:hover,
-.nav-item contact:hover {
+.nav-item.nav-item:hover,
+.nav-item .nav-item dropdown:hover,
+.nav-item .nav-item contact:hover,
+.nav-item dropdown.nav-item:hover,
+.nav-item dropdown .nav-item dropdown:hover,
+.nav-item dropdown .nav-item contact:hover,
+.nav-item contact.nav-item:hover,
+.nav-item contact .nav-item dropdown:hover,
+.nav-item contact .nav-item contact:hover {
   background-color: rgba(56, 87, 224, 0.39);
 }
-
-.nav-item:active,
-.nav-item dropdown:active,
-.nav-item contact:active {
+.nav-item.nav-item:active,
+.nav-item .nav-item dropdown:active,
+.nav-item .nav-item contact:active,
+.nav-item dropdown.nav-item:active,
+.nav-item dropdown .nav-item dropdown:active,
+.nav-item dropdown .nav-item contact:active,
+.nav-item contact.nav-item:active,
+.nav-item contact .nav-item dropdown:active,
+.nav-item contact .nav-item contact:active {
   background-color: #9DB9C3;
 }
 
 /*------------MAIN--------------*/
-
 .introduccion {
   font-size: medium;
   border: 0.5px solid black;
@@ -82,23 +91,31 @@ main h4 {
 .box3,
 .box4 {
   background-color: #9DB9C3;
-  color: black;
+  color: rgb(15, 15, 15);
   box-sizing: border-box;
+  max-height: 500px;
+  max-width: 200vh;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
+  position: relative;
+}
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img {
+  padding-bottom: 15px;
 }
 
 .caja-flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   margin: 15px;
   padding: 10px;
-  box-sizing: 20rem;
-  gap: 1.5rem;
-  min-height: 300px;
-  width: 300px;
+  box-sizing: 2rem;
+  gap: 1.2rem;
+  list-style: none;
 }
 
 .mapa {
@@ -142,7 +159,7 @@ textarea:hover {
 
 /*------------FOOTER--------------*/
 footer {
-  color: black;
+  color: rgb(15, 15, 15);
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -160,6 +177,4 @@ footer {
     grid-template-columns: 2 1;
     padding-top: 5px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

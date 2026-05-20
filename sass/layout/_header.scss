@@ -10,6 +10,7 @@ header {
     padding-top: 20px;
 }
 
+
 body h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -37,16 +38,16 @@ body h2 {
     padding: 0.3rem;
     margin: 0.3rem;
     box-shadow: 0 0 0 1px $color-box;
-}
 
-.nav-item:hover,
-.nav-item dropdown:hover,
-.nav-item contact:hover {
-    background-color: $bg-nav;
-}
+    &.nav-item:hover,
+    .nav-item dropdown:hover,
+    .nav-item contact:hover {
+        background-color: $bg-nav;
+    }
 
-.nav-item:active,
-.nav-item dropdown:active,
-.nav-item contact:active {
-    background-color: $bg-general;
+    &.nav-item:active,
+    .nav-item dropdown:active,
+    .nav-item contact:active {
+        background-color: $bg-general;
+    }
 }
