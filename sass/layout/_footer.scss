@@ -3,15 +3,36 @@
 
 /*------------FOOTER--------------*/
 
+.logo-footer img {
+    height: 150px;
+    padding-left: 50px;
+}
+
+.enlacesfooter {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 footer {
     color: $color-font2;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     margin: 0;
     padding: 10px;
     background-color: $bg-general;
-    background-position: bottom;
-    align-items: normal;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 350px repeat(2, 1fr);
+    margin: 0%;
+    padding: 0%;
+}
+
+.text-center {
+    font-size: small;
+    margin: 0.3%;
 }
