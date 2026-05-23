@@ -54,33 +54,60 @@ main h4 {
     box-sizing: 2rem;
     gap: 1.2rem;
     list-style: none;
+    cursor: pointer;
 }
 
-.botontransition {
+.cssbuttons-io-button {
     @include flex-base;
-    box-sizing: 1rem;
-    background-color: $bg-general;
-    border-radius: 10px;
-    max-height: 40px;
-    width: 70%;
+    background: $bg-general;
+    color: $color-font;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9rem;
+    border: none;
+    letter-spacing: 0.05rem;
+    box-shadow: inset 0 0 1.6rem -0.6rem #46484d;
+    overflow: hidden;
+    position: relative;
+    height: 2.8rem;
+    width: 100vh;
+    margin: 15px;
     padding: 20px;
-    margin-left: 30vh;
-    transform-origin: center;
-    transition-property: transition-timing-function;
-    transition-duration: 1s;
-    text-decoration: none;
-
-
-    & button:hover {
-        width: 100%;
-        background-color: #217d9e;
-        transform: scale(1.1);
-    }
 }
 
-button t-linear {
-    transition-timing-function: linear;
+
+.cssbuttons-io-button .icon {
+    @include flex-base;
+    background: white;
+    margin-left: 1rem;
+    position: absolute;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.2rem #6f9fcc;
+    right: 0.3em;
+    transition: all 0.3s;
 }
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6rem);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.2rem;
+    transition: transform 0.3s;
+    color: #2214e6;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1rem);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
 
 .mapa {
     padding-left: 100px;
