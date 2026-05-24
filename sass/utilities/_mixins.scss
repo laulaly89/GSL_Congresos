@@ -1,7 +1,19 @@
+@use "../utilities/variables" as *;
+
 //mixins
 
 @mixin flex-base {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin main-box {
+    font-size: medium;
+    border: 0.5px solid $border-black;
+    border-radius: 5px;
+    box-shadow: 1 1 1 2px $color-box;
+    box-sizing: border-box 2px;
+    padding: 15px;
+    margin: 50px;
 }
