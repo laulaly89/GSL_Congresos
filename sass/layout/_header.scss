@@ -8,8 +8,12 @@ header {
     border-radius: 5px;
     border: 0.5px solid $border-black;
     padding-top: 20px;
+    background: linear-gradient(90deg, #298391 0%, rgba(157, 185, 195, 1) 35%, rgba(193, 217, 222, 1) 100%);
 }
 
+h1 {
+    text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.5);
+}
 
 body h1 {
     font-size: 2.5rem;
