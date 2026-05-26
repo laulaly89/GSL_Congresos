@@ -1,10 +1,110 @@
+@use "../utilities/mixins" as *;
+
+
 /*------------MEDIAQUERIES--------------*/
 
-@media(min-width: 500px) {
+@media(max-width: 500px) {
 
-    header {
-        grid-template-columns: 2 1;
-        padding-top: 5px;
+    header h1 {
+        font-size: 35px;
+        margin: 0%;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    .navbar-brand img {
+        height: 70px;
+    }
+
+
+    main h2 {
+        font-size: 17px;
+    }
+
+    .introduccion {
+        font-size: 10px;
+        padding: 2%;
+        margin: 8%;
+        text-align: center;
+    }
+
+
+    .pre-evento,
+    .eventosede,
+    .post-evento {
+        font-size: 10px;
+        padding: 5%;
+        margin: 8%;
+        padding-left: 8px;
+    }
+
+    .caja-flex {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: relative;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        min-width: 300px;
+        object-fit: fill;
+        height: 390px;
+        margin: 14px;
+        text-align: center;
+        list-style: none;
+    }
+
+
+    .cssbuttons-io-button {
+        max-width: 47vh;
+        font-size: 13px;
+        text-align: start;
+        padding-right: 10%;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 300px;
+        object-position: initial;
+        object-fit: cover;
+
+    }
+
+    .enlacesfooter {
+        font-size: 15px;
+    }
+
+    .logo-footer img {
+        display: block;
+        height: 70px;
+        position: absolute;
+        top: -15px;
+        left: 25%;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        font-size: 10px;
+        padding-top: 20px;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .text-center {
+        font-size: 5px;
+        margin: 0.3%;
+
     }
 
 }
