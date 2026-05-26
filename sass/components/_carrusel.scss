@@ -5,9 +5,10 @@
     @include flex-base;
     padding-bottom: 20px;
     transition: filter 0.3s ease;
-    text-shadow: 2px  2px 0px #f7f7f7,
-       -2px  2px 0px #d3d0d0,
-        2px -1px 0px #9b9999,
+    text-shadow: 2px  2px 1px #f7f7f7,
+       -2px  2px 2px #d3d0d0,
+        2px -1px 2px #9b9999,
+        3px 3px 5px #ffffff;     
 }
 
 .carousel-item {
