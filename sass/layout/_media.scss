@@ -74,8 +74,7 @@
         height: 300px;
         object-position: initial;
         object-fit: cover;
-
-    }
+    }    
 
     .enlacesfooter {
         font-size: 15px;
@@ -86,25 +85,23 @@
         height: 70px;
         position: absolute;
         top: -15px;
-        left: 25%;
+        left: 30%;
     }
 
     .contenedor {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        align-items: center;
-        text-align: start;
+        align-items: start;
         font-size: 10px;
-        padding-top: 20px;
         position: relative;
         padding-top: 50px;
+        padding-right: 20px;
     }
 
     .text-center {
         font-size: 5px;
         margin: 0.3%;
-
     }
 
 }
