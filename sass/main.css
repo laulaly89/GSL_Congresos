@@ -36,34 +36,24 @@ h2 {
 }
 
 .nav-item,
-.nav-item dropdown,
-.nav-item contact {
+.nav-item.dropdown,
+.nav-item.contact {
   border: 0.5px solid black;
   border-radius: 0.5rem;
   padding: 0.3rem;
   margin: 0.3rem;
   box-shadow: 0 0 0 1px rgba(120, 121, 122, 0.4);
 }
-.nav-item.nav-item:hover,
-.nav-item .nav-item dropdown:hover,
-.nav-item .nav-item contact:hover,
-.nav-item dropdown.nav-item:hover,
-.nav-item dropdown .nav-item dropdown:hover,
-.nav-item dropdown .nav-item contact:hover,
-.nav-item contact.nav-item:hover,
-.nav-item contact .nav-item dropdown:hover,
-.nav-item contact .nav-item contact:hover {
+
+.nav-item:hover,
+.nav-item.dropdown:hover,
+.nav-item.contact:hover {
   background-color: rgba(56, 87, 224, 0.39);
 }
-.nav-item.nav-item:active,
-.nav-item .nav-item dropdown:active,
-.nav-item .nav-item contact:active,
-.nav-item dropdown.nav-item:active,
-.nav-item dropdown .nav-item dropdown:active,
-.nav-item dropdown .nav-item contact:active,
-.nav-item contact.nav-item:active,
-.nav-item contact .nav-item dropdown:active,
-.nav-item contact .nav-item contact:active {
+
+.nav-item:active,
+.nav-item.dropdown:active,
+.nav-item.contact:active {
   background-color: #9DB9C3;
 }
 
@@ -77,7 +67,7 @@ h2 {
   border-radius: 5px;
   box-shadow: 1 1 1 2px rgba(120, 121, 122, 0.4);
   box-sizing: border-box 2px;
-  padding: 15px;
+  padding: 20px;
   margin: 50px;
   list-style: none;
 }
@@ -285,7 +275,8 @@ main h4 {
   transform: translate(2px, 2px);
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -332,7 +323,7 @@ textarea:hover {
 
 /*------------FOOTER--------------*/
 .logo-footer img {
-  height: 140px;
+  height: 150px;
   padding-left: 50px;
 }
 
@@ -379,6 +370,9 @@ footer {
   }
   main h2 {
     font-size: 17px;
+  }
+  .hero-completo {
+    height: 200px;
   }
   .introduccion {
     font-size: 1rem;
