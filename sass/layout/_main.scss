@@ -10,7 +10,7 @@
 .eventosede,
 .post-evento {
     @include main-box;
-    list-style: none
+    list-style: none;
 }
 
 
@@ -92,7 +92,7 @@ main h4 {
     margin: 20px auto;
     padding: 20px;
     text-decoration: none;
-}
+} 
 
 
 .cssbuttons-io-button .icon {
