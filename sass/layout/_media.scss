@@ -3,7 +3,7 @@
 
 /*------------MEDIAQUERIES--------------*/
 
-@media(max-width: 767px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     header h1 {
         font-size: 35px;
@@ -80,37 +80,51 @@
         object-fit: cover;
     }
 
-    footer h3 {
-        padding-left: 20px;
+    .contenedor-whatsapp {
+        position: fixed;
+        pointer-events: auto;
+        z-index: 9999;
     }
 
-    .enlacesfooter {
-        font-size: 15px;
-        padding-left: 10px;
-    }
+footer h3 {
+    padding-left: 20px;
+}
 
-    .logo-footer img {
+.enlacesfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    & img {
+        max-width: 130px;
+        height: auto;
         display: block;
-        height: 70px;
-        position: absolute;
-        top: -15px;
-        left: 25%;
+        margin-right: 35px;
     }
+}
 
-    .contenedor {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        align-items: start;
-        font-size: 10px;
-        position: relative;
-        padding-top: 50px;
-        padding-right: 20px;
-    }
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+}
 
-    .text-center {
-        font-size: 5px;
-        margin: 0.3%;
-    }
-    
-    }
+.text-center {
+    font-size: 5px;
+    margin: 0.3%;
+}
+
+}

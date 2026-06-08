@@ -7,24 +7,33 @@
 /*------------CABECERA--------------*/
 header {
   background-color: #9DB9C3;
+  font-family: "Pacifico", cursive;
   border-radius: 5px;
   border: 0.5px solid black;
   padding-top: 20px;
   background: linear-gradient(90deg, #298391 0%, rgb(157, 185, 195) 35%, rgb(193, 217, 222) 100%);
 }
 
-h1 {
-  text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.5);
+.hero-completo {
+  height: 380px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-family: "Stack Sans Notch", sans-serif;
+  text-shadow: 2px 2px 5px rgba(14, 13, 13, 0.5);
+  font-size: 2.9rem;
   text-align: center;
   color: black;
 }
 
 h2 {
   color: rgba(5, 5, 5, 0.699);
+  font-family: "Pacifico", cursive;
   font-size: 1.8rem;
   text-align: center;
   font-style: italic;
@@ -57,6 +66,15 @@ h2 {
   background-color: #9DB9C3;
 }
 
+.hero-completo {
+  height: 320px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /*------------MAIN--------------*/
 .introduccion,
 .pre-evento,
@@ -81,6 +99,7 @@ main h3 {
   justify-content: center;
   align-items: center;
   font-size: x-large;
+  font-family: "Pacifico", cursive;
   padding-top: 5vh;
 }
 
@@ -132,6 +151,23 @@ main h4 {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+}
+
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contenedor-galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  padding-bottom: 40px;
 }
 
 .cssbuttons-io-button {
@@ -351,13 +387,23 @@ footer {
   padding: 0%;
 }
 
+img.footer-icono {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .text-center {
   font-size: small;
   margin: 0.2%;
 }
 
 /*------------MEDIAQUERIES--------------*/
-@media (max-width: 767px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   header h1 {
     font-size: 35px;
     margin: 0%;
@@ -421,29 +467,42 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .contenedor-whatsapp {
+    position: fixed;
+    pointer-events: auto;
+    z-index: 9999;
+  }
   footer h3 {
     padding-left: 20px;
   }
   .enlacesfooter {
-    font-size: 15px;
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    padding: 0;
+    list-style: none;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
   }
   .logo-footer img {
+    max-width: 130px;
+    height: auto;
     display: block;
-    height: 70px;
-    position: absolute;
-    top: -15px;
-    left: 25%;
+    margin-right: 35px;
   }
   .contenedor {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: start;
-    font-size: 10px;
-    position: relative;
-    padding-top: 50px;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
   }
   .text-center {
     font-size: 5px;

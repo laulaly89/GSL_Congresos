@@ -5,24 +5,33 @@
 
 header {
     background-color: $bg-general;
+    font-family: $font-general;
     border-radius: 5px;
     border: 0.5px solid $border-black;
     padding-top: 20px;
     background: linear-gradient(90deg, #298391 0%, rgba(157, 185, 195, 1) 35%, rgba(193, 217, 222, 1) 100%);
 }
 
-h1 {
-    text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.5);
+
+
+.hero-completo {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-family: "Stack Sans Notch", sans-serif;
+    text-shadow: 2px 2px 5px rgba(14, 13, 13, 0.5);
+    font-size: 2.9rem;
     text-align: center;
     color: $color-font;
 }
 
 h2 {
     color: $color-font1;
+    font-family: $font-general;
     font-size: 1.8rem;
     text-align: center;
     font-style: italic;
@@ -41,7 +50,7 @@ h2 {
     padding: 0.3rem;
     margin: 0.3rem;
     box-shadow: 0 0 0 1px $color-box;
-    }
+}
 
 
 .nav-item:hover,
@@ -56,4 +65,9 @@ h2 {
     background-color: $bg-general;
 }
 
- 
+.hero-completo {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
